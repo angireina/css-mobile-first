@@ -2,8 +2,12 @@
 	display: none;
 }
 
-#etiqueta {
-	color: white;
+.open {
+	float: right;
+}
+
+.close {
+	float: right;
 }
 
 #header #btn-menu-label {
@@ -12,16 +16,17 @@
 	cursor: pointer;
 }
 
-#nav {
-	position: absolute;
-	top: 0px;
+.contenedor-menu{
+	position: relative;
+	top: 90px;
 	left: 0;
 	width: 100%;
 	height: 100vh;
 	background: rgb(30, 30, 30);
 	transition: all 0.2s;
-    transform: translateX(100%);
-    position: fixed;
+ /*   transform: translateX(100%);*/
+	position: fixed;
+	padding: 19px;
 }
 
 li {
@@ -39,31 +44,22 @@ li {
 	padding: 19px;
 }
 
-.top {
-	margin-top: -25px;
-}
-
-.border-none {
-	border: none;
-}
-
-#btn-menu:checked ~ #nav {
-    transform: translateX(20%);
+#btn-menu:checked ~ .contenedor-menu {
+    /*transform: translateX(20%);*/
 }
 
 .fa-times:before {
     content: "\f00d";
     color: #484848;
     cursor: pointer;
+    float: right;
 }
 
-label {
-	margin: 15px 265px;
-}
 
-@media screen and (min-width: 768px) {
 
-	#nav {
+/*@media screen and (min-width: 768px) {
+
+	.contenedor-menu {
 	position: absolute;
 	top: 0px;
 	left: 0;
@@ -75,13 +71,13 @@ label {
     position: fixed;
 	}
 
-	#btn-menu:checked ~ #nav {
-    transform: translateX(125%);
+	#btn-menu:checked ~ .contenedor-menu {
+    transform: translateX(127%);
 	}
 
 	label {
-	margin: 15px 291px;
+	margin: 15px 295px;
 	}
 
 }
-
+*/
